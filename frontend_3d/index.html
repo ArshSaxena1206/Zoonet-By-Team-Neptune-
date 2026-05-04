@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooNet 3D - AI Animal Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div class="overlay">
+        <header>
+            <div class="logo">🐾 ZooNet 3D</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#launch" class="btn-primary">Launch App</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="ZooNet Intelligence">ZooNet Intelligence</h1>
+                <p class="subtitle">Advanced Animal Species Detection powered by Deep Learning & Computer Vision.</p>
+                <div class="cta-group">
+                    <button class="btn-glow" onclick="window.location.href='http://localhost:8503'">Enter Streamlit UI</button>
+                    <button class="btn-outline">View Model Specs</button>
+                </div>
+            </div>
+            
+            <div class="floating-card glass-panel">
+                <h3>Real-Time Analysis</h3>
+                <p>Detect over 1,000 animal species with sub-second latency.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-num">98.5%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">&lt;50ms</span>
+                        <span class="stat-label">Latency</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Three.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
